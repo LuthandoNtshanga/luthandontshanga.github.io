@@ -38,8 +38,10 @@
     
     <div class="hero" id="hero">
     
-        <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Luthando</span><br><span class="sec-text"><h1>Web Designer</h1></span></h1>
-    
+      <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Luthando</span><br>
+        <span class="sec-text">Web Designer</span>
+     </h1>
+     
         <div class="mouse">
             <span></span>
         </div>
@@ -62,50 +64,74 @@
         </section>
          <!--===== SKILLS =====-->
          <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills__container bd-grid">  
-              <div>              
-                <img src="img/work.jpg" alt="Skills image" class="skills__img">
-            </div>        
-                <div class="skills__info">
-                    <h2 class="skills__subtitle">Professional Skills</h2>
-                    <p class="skills__text">Highly skilled in Web Design languages and tools such as HTML, CSS, and JavaScript. Familiar with JS frameworks such as Angular, Vue, and Bootstrap. Experienced with tools such as Visual Studio Code and Adobe XD.</p>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='"fab fa-html5" skills__icon'></i>
-                            <span class="skills__name">HTML5</span>
-                        </div>
-                        <div class="skills__bar"></div>
-                        <div><span class="skills__percentage skills__html">95%</span></div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='fab fa-css3-alt skills__icon'></i>
-                            <span class="skills__name">CSS3</span>
-                        </div>
-                        <div class="skills__bar"></div>
-                        <div><span class="skills__percentage skills__css">85%</span></div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='fab fa-js-square skills__icon'></i>
-                            <span class="skills__name">JavaScript</span>
-                        </div>
-                        <div class="skills__bar"></div>
-                        <div><span class="skills__percentage skills__js">50%</span></div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='fa fa-paint-brush skills__icon'></i>
-                            <span class="skills__name">UX/UI</span>
-                        </div>
-                        <div class="skills__bar "></div>
-                        <div><span class="skills__percentage skills__ux">50%</span></div>
-                    </div>
-                </div>
+          <h2 class="section-title">Skills</h2>
+          <div class="skills__container">
+             
+              <div class="skills__info">
                 
-            </div>
-        </section>
+                  <h3 class="skills__subtitle">Professional Skills</h3>
+                  <p class="skills__text">Highly skilled in Web Design languages and tools such as HTML, CSS, and JavaScript. Proficient with modern frameworks like React and Vue. Experienced in C# development and tools such as Visual Studio Code and Adobe XD.</p>
+              </div>
+              <div class="skills__grid">
+                  <div class="skill-card">
+                      <i class="fab fa-html5 skill-icon"></i>
+                      <h4 class="skill-name">HTML5</h4>
+                      <div class="skill-bar">
+                          <div class="skill-progress" style="width: 95%"></div>
+                      </div>
+                      <span class="skill-percentage">95%</span>
+                  </div>
+                  <div class="skill-card">
+                      <i class="fab fa-css3-alt skill-icon"></i>
+                      <h4 class="skill-name">CSS3</h4>
+                      <div class="skill-bar">
+                          <div class="skill-progress" style="width: 85%"></div>
+                      </div>
+                      <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="skill-card">
+                      <i class="fab fa-js-square skill-icon"></i>
+                      <h4 class="skill-name">JavaScript</h4>
+                      <div class="skill-bar">
+                          <div class="skill-progress" style="width: 50%"></div>
+                      </div>
+                      <span class="skill-percentage">50%</span>
+                  </div>
+                  <div class="skill-card">
+                      <i class="fab fa-react skill-icon"></i>
+                      <h4 class="skill-name">React</h4>
+                      <div class="skill-bar">
+                          <div class="skill-progress" style="width: 70%"></div>
+                      </div>
+                      <span class="skill-percentage">70%</span>
+                  </div>
+                  <div class="skill-card">
+                      <i class="fab fa-vuejs skill-icon"></i>
+                      <h4 class="skill-name">Vue</h4>
+                      <div class="skill-bar">
+                          <div class="skill-progress" style="width: 60%"></div>
+                      </div>
+                      <span class="skill-percentage">60%</span>
+                  </div>
+                  <div class="skill-card">
+                      <i class="fab fa-microsoft skill-icon"></i>
+                      <h4 class="skill-name">C#</h4>
+                      <div class="skill-bar">
+                          <div class="skill-progress" style="width: 65%"></div>
+                      </div>
+                      <span class="skill-percentage">65%</span>
+                  </div>
+                  <div class="skill-card">
+                      <i class="fa fa-paint-brush skill-icon"></i>
+                      <h4 class="skill-name">UX/UI</h4>
+                      <div class="skill-bar">
+                          <div class="skill-progress" style="width: 50%"></div>
+                      </div>
+                      <span class="skill-percentage">50%</span>
+                  </div>
+              </div>
+          </div>
+      </section>
         <section id="work" class="projects-section">
             <h2 class="section-title">Projects</h2>
           
@@ -159,18 +185,18 @@
                 </p>
               </a>
               <a
-                href="https://codepen.io/freeCodeCamp/full/mVEJag"
+                href="https://react-weatherapplt.netlify.app"
                 target="_blank"
                 class="project project-tile"
               >
                 <img
                   class="project-image"
-                  src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
+                  src="img/screely-1728049817819.png"
                   alt="project"
                 />
                 <p class="project-title">
                   <span class="code">&lt;</span>
-                  Map Data Across the Globe
+                  Weather App
                   <span class="code">&#47;&gt;</span>
                 </p>
               </a>
@@ -181,12 +207,12 @@
               >
                 <img
                   class="project-image"
-                  src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png"
+                  src="/img/screely-1728050351564.png"
                   alt="project"
                 />
                 <p class="project-title">
                   <span class="code">&lt;</span>
-                  Wikipedia Viewer
+                  Protumi Construction
                   <span class="code">&#47;&gt;</span>
                 </p>
               </a>
@@ -197,12 +223,12 @@
               >
                 <img
                   class="project-image"
-                  src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png"
+                  src="img/screely-1728284785163.png"
                   alt="project"
                 />
                 <p class="project-title">
                   <span class="code">&lt;</span>
-                  Tic Tac Toe Game
+                  Personal Portfolio
                   <span class="code">&#47;&gt;</span>
                 </p>
               </a>
@@ -216,39 +242,65 @@
           </section>
           
           <!-- END PROJECTS SECTION -->
-          <section id="section" class="section">
-        <h1 class="sec04">Section 04</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus sequi sint consectetur excepturi doloribus vero provident consequuntur accusamus quisquam nesciunt cupiditate soluta alias illo et deleniti voluptates facilis repudiandae similique dolore quaerat architecto perspiciatis officiis dolor ullam expedita suscipit neque minima rem praesentium inventore ab officia quos dignissimos esse quam placeat iste porro eius! Minus, aspernatur nesciunt consectetur. Sit, eius, itaque, porro, beatae impedit officia tenetur reiciendis autem vitae a quae ipsam repudiandae odio dolorum quaerat asperiores possimus corporis optio animi quisquam laboriosam nihil quam voluptatum quidem veritatis iste culpa iure modi perspiciatis recusandae ipsa libero officiis aliquam doloremque similique id quasi atque distinctio enim sapiente ratione in quia eum perferendis earum blanditiis. Nobis, architecto, veniam molestias minus iste necessitatibus est ab in earum ratione eveniet soluta molestiae sed illo nostrum nemo debitis. Minus, quod totam aliquam ea asperiores fugit quaerat excepturi dolores ratione numquam consequatur id unde alias provident vero incidunt exercitationem similique consequuntur hic possimus? Fuga, eveniet quaerat inventore corporis laborum eligendi enim soluta obcaecati aliquid veritatis provident amet laudantium est quisquam dolore exercitationem modi? Distinctio, pariatur, ab velit praesentium vitae quidem consequatur deleniti recusandae odit officiis. Quidem, cupiditate.</p>
-    </div>
-  </section>
-  <section class="contact section" id="contact">
-    <h2 class="section-title">Contact Me</h2>
-    <div class="container">
-        
-        <div class="contact__container">
-            <div class="contact__info">
-                <div class="contact__info-item">
-                    <i class="fas fa-map-marker-alt contact__info-icon"></i>
-                    <p>123 Web Dev Street, Codeville, 12345</p>
+          <section class="section">
+            <h2 class="section-title">Comments</h2>
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="/api/placeholder/100/100" alt="John Doe" class="carousel-image">
+                    <div class="carousel-content">
+                        <h3>John Doe</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus sequi sint consectetur excepturi doloribus vero provident consequuntur accusamus quisquam nesciunt cupiditate soluta alias illo et deleniti voluptates facilis repudiandae similique dolore quaerat architecto perspiciatis officiis dolor ullam expedita suscipit neque minima rem praesentium inventore ab officia quos dignissimos esse quam placeat iste porro eius!</p>
+                    </div>
                 </div>
-                <div class="contact__info-item">
-                    <i class="fas fa-envelope contact__info-icon"></i>
-                    <p>luthandontshanga@gmail.com</p>
+                <div class="carousel-slide">
+                    <img src="/api/placeholder/100/100" alt="Jane Smith" class="carousel-image">
+                    <div class="carousel-content">
+                        <h3>Jane Smith</h3>
+                        <p>Minus, aspernatur nesciunt consectetur. Sit, eius, itaque, porro, beatae impedit officia tenetur reiciendis autem vitae a quae ipsam repudiandae odio dolorum quaerat asperiores possimus corporis optio animi quisquam laboriosam nihil quam voluptatum quidem veritatis iste culpa iure modi perspiciatis recusandae ipsa libero officiis aliquam doloremque similique id quasi atque distinctio enim sapiente ratione in quia eum perferendis earum blanditiis.</p>
+                    </div>
                 </div>
-                <div class="contact__info-item">
-                    <i class="fas fa-phone contact__info-icon"></i>
-                    <p>081 399 9186</p>
+                <div class="carousel-slide">
+                    <img src="img/LTProfile.jpg" alt="Bob Johnson" class="carousel-image">
+                    <div class="carousel-content">
+                        <h3>Bob Johnson</h3>
+                        <p>Nobis, architecto, veniam molestias minus iste necessitatibus est ab in earum ratione eveniet soluta molestiae sed illo nostrum nemo debitis. Minus, quod totam aliquam ea asperiores fugit quaerat excepturi dolores ratione numquam consequatur id unde alias provident vero incidunt exercitationem similique consequuntur hic possimus?</p>
+                    </div>
                 </div>
+                <div class="carousel-nav">
+                    <button id="prevBtn">Previous</button>
+                    <button id="nextBtn">Next</button>
+                </div>
+                <div class="carousel-dots"></div>
             </div>
-            <form class="contact__form ">
-                <input type="text" placeholder="Name" class="contact__form-input" required>
-                <input type="email" placeholder="Email" class="contact__form-input" required>
-                <textarea placeholder="Message" class="contact__form-input contact__form-textarea" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
-    
-</section>
+        </section>
+        <section class="contact section" id="contact">
+          <h2 class="section-title">Contact Me</h2>
+          <div class="container">
+      
+              <div class="contact__container">
+                  <div class="contact__info">
+                      <div class="contact__info-item">
+                          <i class="fas fa-map-marker-alt contact__info-icon"></i>
+                          <p>123 Web Dev Street, Codeville, 12345</p>
+                      </div>
+                      <div class="contact__info-item">
+                          <i class="fas fa-envelope contact__info-icon"></i>
+                          <p>luthandontshanga@gmail.com</p>
+                      </div>
+                      <div class="contact__info-item">
+                          <i class="fas fa-phone contact__info-icon"></i>
+                          <p>081 399 9186</p>
+                      </div>
+                  </div>
+                  <form class="contact__form ">
+                      <input type="text" placeholder="Name" class="contact__form-input" required>
+                      <input type="email" placeholder="Email" class="contact__form-input" required>
+                      <textarea placeholder="Message" class="contact__form-input contact__form-textarea" required></textarea>
+                      <button type="submit" class="btn">Send Message</button>
+                  </form>
+              </div>
+      
+      </section>
 
     <!--===== FOOTER =====-->
     <footer class="footer">

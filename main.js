@@ -64,3 +64,62 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log('Observing:', bar.className);
     });
   });
+
+  const slides = document.querySelectorAll('.carousel-slide');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const dotsContainer = document.querySelector('.carousel-dots');
+  let currentSlide = 0;
+
+  function showSlide(n) {
+      slides[currentSlide].classList.remove('active');
+      dots[currentSlide].classList.remove('active');
+      currentSlide = (n + slides.length) % slides.length;
+      slides[currentSlide].classList.add('active');
+      dots[currentSlide].classList.add('active');
+  }
+
+  prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));
+  nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
+
+  // Create dots
+  slides.forEach((_, index) => {
+      const dot = document.createElement('span');
+      dot.classList.add('dot');
+      if (index === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => showSlide(index));
+      dotsContainer.appendChild(dot);
+  });
+
+  const dots = document.querySelectorAll('.dot');
+
+  const skillBars = document.querySelectorAll('.skill-progress');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.width = entry.target.parentNode.nextElementSibling.textContent;
+    }
+  });
+}, { threshold: 0.5 });
+
+skillBars.forEach(bar => {
+  observer.observe(bar);
+});
+
+const roles = ['Web Designer', 'Software Developer', 'Data Analyst', 'Full-Stack Developer'];
+let index = 0;
+
+function typeText() {
+    const secText = document.querySelector('.sec-text');
+    secText.style.width = '0';  // Reset width for typing effect
+    secText.textContent = roles[index];
+    secText.style.animation = 'none';  // Reset animation
+    setTimeout(() => {
+        secText.style.animation = 'typing 2s steps(20) forwards, blink 0.7s step-end infinite alternate';
+    }, 100);  // Small delay to reset the animation
+    index = (index + 1) % roles.length;
+}
+
+setInterval(typeText, 3000);  // Change text every 3 seconds
+typeText();  // Initialize typing on page load
